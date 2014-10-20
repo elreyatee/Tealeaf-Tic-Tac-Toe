@@ -11,6 +11,24 @@
 # 5. Ask player to play again or quit
 #   5a. If yes, clear game board
 
+# *******************************************************************************
+
+# draw a board
+
+# assign player1 to 'X'
+# assign player2 to 'O'
+
+# loop until a winner or all squares are taken
+#   player1 picks an empty square
+#   check for a winner
+#   player2 picks an empty square
+#   check for a winner
+
+# if there's a winner
+#   show the winner
+# or else
+#   it's a tie
+
 require 'pry'
 
 TILES = {'1' => ' ', '2' => ' ', '3' => ' ', '4' => ' ', '5' => ' ', '6' => ' ',
@@ -19,6 +37,7 @@ TILES = {'1' => ' ', '2' => ' ', '3' => ' ', '4' => ' ', '5' => ' ', '6' => ' ',
 MARKED = []
 
 def draw_game_board
+  system 'clear'
   puts "     |     |     "
   puts "  #{TILES['1']}  |  #{TILES['2']}  |  #{TILES['3']}  "
   puts "     |     |     "
